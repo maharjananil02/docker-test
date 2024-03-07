@@ -21,7 +21,7 @@ export const registerUser = asyncHandler(async (request, response) => {
         })
 
         if (user) {
-            response.json({ status: 201, message: "CREATED", id: user.id })
+            response.json({ status: 201, message: "CREATED", id: user.id });
         }
     } catch (error) {
         console.log(error)
